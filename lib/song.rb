@@ -30,7 +30,7 @@ end
 
 def self.find_by_name(songName)
   self.all.detect do |song|
-    song.name = songName
+    song.name == songName
   end
 end
 
